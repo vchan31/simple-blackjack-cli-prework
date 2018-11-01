@@ -59,6 +59,16 @@ end
 #####################################################
 
 def runner
-  # code runner here
+  #first, they are welcome'd
+  welcome
+  #then they will be dealt two cards in the initial round, the value is saved in running_total,  
+  running_total = initial_round
+  #Use a until loop, and ask if they wanna hit or stay using hit? function:
+  until running_total > 21
+    running_total = hit?(running_total)
+    
+  end
+  #Once the loop stops, the game ending function runs telling them the full hand, 
+  end_game(running_total)
 end
     
