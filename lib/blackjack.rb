@@ -66,6 +66,7 @@ def runner
   #Use a until loop, and ask if they wanna hit or stay using hit? function:
   until running_total > 21
     running_total = hit?(running_total)
+    display_card_total(running_total)
     
   end
   #Once the loop stops, the game ending function runs telling them the full hand, 
